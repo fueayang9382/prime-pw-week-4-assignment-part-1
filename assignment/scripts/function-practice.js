@@ -62,39 +62,88 @@ console.log('multiplying three numbers 5 & 6 & 5:', multiplyThree(5,6,5) );
 console.log('4.---------------------------------------------end');
 
 
+
+
 console.log('5.---------------------------------------------start');
 // 5. Function that will return true if a number is positive, 
 //    or greater than zero, and false otherwise
-const arry = [0, -1, 2, 5, -7];
-const newArry = []; 
+number = [3, 0, -3]
+//x = 0; 
 function isPositive( ) {
-  if ( number > 0 ){
-    return ;
+  if (number.length> 0){
+    
+    return true;
   }
-    return;
+  else{
+    return false;
+  }
 }
 
-console.log();
-
+//console.log('only positives are true', isPositive(3,0,-3));
+console.log('only positives are true', isPositive(3));
+console.log('only positives are true', isPositive(0));
+console.log('only positives are true', isPositive(-3));
 // Call the function to test each outcome (true & false) 
 // Write a separate console.log statement for each outcome
 console.log( 'isPositive - should say true', isPositive(3) );
 console.log( 'isPositive - should say false', isPositive(0) );
 console.log( 'isPositive - should say false', isPositive(-3) );
 
+
+
+
 console.log('5.---------------------------------------------end');
+
+
+
+
+
+
+
+
 // 6. Function to return the _last_ item in an array. If the 
 //    array is empty, return `undefined`.
-function getLast( array ) {
+console.log('6.---------------------------------------------start');
+array = [1, 2, null];
+last =  function(array, n){
+    if (array == null)
+      return void 0; 
+    if (n == null)
+    return array[array.length - 1];
+  return arrray.slice(Math.max(array.length - n, 0));
+};
 
-}
+//function getLast( array ) {
+
+//}
+
+console.log('this is the last item of the array:', last([1,2,3]));
+
+
+
+console.log('6.---------------------------------------------end');
+
+
+
 
 // 7. Function to find a value in an array. Return true if the 
 //    value is found and false otherwise. Use a loop;
 //    DO NOT use Array.includes, Array.indexOf, or Array.find 
+console.log('7.---------------------------------------------start');
+array = [5, 10, 15, 25]; 
 function find( value, array ){
-  
+    for( var i = 0; i< array; i++)
+        if(value[i] === array ){
+
+        }
+  return false; 
 }
+
+
+console.log( 'this is the value:', find());
+
+
+console.log('7.---------------------------------------------end');
 
 // ----------------------
 // Stretch Goals

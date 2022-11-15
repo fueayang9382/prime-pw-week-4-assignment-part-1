@@ -5,48 +5,84 @@ console.log('***** Function Practice *****')
 // to test it and display the result
 
 // 1. Function to return 'Hello World!'
+console.log('1.---------------------------------------------start');
+
 function hello() {
+  console.log('Hello World!');
   return 'Hello World!';
 }
+hello();
+
+
 // Call the function to test
 console.log('Test - should say "Hello World!"', hello());
+
+console.log('1.---------------------------------------------end');
 
 
 // 2. Function to return an personalized hello, using the `name` argument.
 //    for example 'Hello, Jo!', or 'Hello, Stacy!'
-function helloName( name ) {
-  return;
+console.log('2.---------------------------------------------start');
+
+function helloName(name) {
+  console.log('Hello,' + name );
+  return helloName; 
 }
+helloName(' Jesse');
+helloName(' Me');
+helloName(' You');
 // Remember to call the function to test
 
-
+console.log('2.---------------------------------------------end');
+console.log('3.---------------------------------------------start');
 // 3. Function to add two numbers together & return the result
-function addNumbers( firstNumber ) {
-  // return firstNumber + secondNumber;
+function addNumbers( ) {
+  console.log('Doing addNumbers functionof 4 + 5');
+let x = 4 + 5;
+return x; 
 }
+// return firstNumber + secondNumber;
+
+console.log( 'the sum is:', addNumbers());
 
 
+console.log('3.---------------------------------------------End');
+
+console.log('4.---------------------------------------------start');
 // 4. Function to multiply three numbers & return the result
-function multiplyThree( ){
-
+function multiplyThree(num1, num2, num3 ){
+  console.log('multiply three numbers');
+let answer = num1 * num2 * num3;
+return answer; 
 }
 
+console.log('multiplying three numbers 2 & 5 & 10:', multiplyThree(2,5,10) );
+console.log('multiplying three numbers 6 & 6 & 7:', multiplyThree(6,6,7) );
+console.log('multiplying three numbers 5 & 6 & 5:', multiplyThree(5,6,5) );
+console.log('4.---------------------------------------------end');
 
+
+console.log('5.---------------------------------------------start');
 // 5. Function that will return true if a number is positive, 
 //    or greater than zero, and false otherwise
-function isPositive( number ) {
+const arry = [0, -1, 2, 5, -7];
+const newArry = []; 
+function isPositive( ) {
   if ( number > 0 ){
-    return;
+    return ;
   }
     return;
 }
+
+console.log();
+
 // Call the function to test each outcome (true & false) 
 // Write a separate console.log statement for each outcome
 console.log( 'isPositive - should say true', isPositive(3) );
 console.log( 'isPositive - should say false', isPositive(0) );
 console.log( 'isPositive - should say false', isPositive(-3) );
 
-
+console.log('5.---------------------------------------------end');
 // 6. Function to return the _last_ item in an array. If the 
 //    array is empty, return `undefined`.
 function getLast( array ) {

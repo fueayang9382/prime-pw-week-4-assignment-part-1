@@ -164,12 +164,15 @@ console.log('7.---------------------------------------------end');
 //    string. Return true if it is, and false otherwise
 console.log('8.---------------------------------------------start');
 function isFirstLetter(letter, string) {
-      return true;
+          console.log('Are we in isFirstLetter');
+          return string.startsWith(letter,  0);
+
 }
+console.log('want to know if apple starts with a', isFirstLetter('a', 'apple'));
+
+
 console.log( 'isFirstLetter - should say true', isFirstLetter('a', 'apple') );
 console.log( 'isFirstLetter - should say false', isFirstLetter('z', 'apple') );
-
-
 
 
 console.log('8.---------------------------------------------end');
@@ -178,19 +181,18 @@ console.log('8.---------------------------------------------end');
 
 // 9. Function to return the sum of all numbers in an array
 console.log('9.---------------------------------------------start');
-let array3 = [2,4,6]
 let sum = 0;
-function sumAll() {
+function sumAll(...x) {
     while( sum <= 12){
-      console.log(sum + array3.length);
+      
     }
-      sum++; 
+    
     
 
   // TODO: loop to add items
   return sum;
 }
-
+console.log(sumAll(2,4,6));
 
 
 
@@ -226,6 +228,9 @@ console.log('10.---------------------------------------------end');
 //     CodeWars(https://www.codewars.com/). Then describe it 
 //     here in a comment, write the function, and test it!
 console.log('11.---------------------------------------------start');
+
+
+
 
 
 

@@ -48,6 +48,9 @@ console.log( 'the sum is:', addNumbers());
 
 console.log('3.---------------------------------------------End');
 
+
+
+
 console.log('4.---------------------------------------------start');
 // 4. Function to multiply three numbers & return the result
 function multiplyThree(num1, num2, num3 ){
@@ -67,10 +70,9 @@ console.log('4.---------------------------------------------end');
 console.log('5.---------------------------------------------start');
 // 5. Function that will return true if a number is positive, 
 //    or greater than zero, and false otherwise
-number = [3, 0, -3]
-//x = 0; 
-function isPositive( ) {
-  if (number.length> 0){
+
+function isPositive(number ) {
+  if (number > 0){
     
     return true;
   }
@@ -79,7 +81,7 @@ function isPositive( ) {
   }
 }
 
-//console.log('only positives are true', isPositive(3,0,-3));
+
 console.log('only positives are true', isPositive(3));
 console.log('only positives are true', isPositive(0));
 console.log('only positives are true', isPositive(-3));
@@ -104,7 +106,7 @@ console.log('5.---------------------------------------------end');
 // 6. Function to return the _last_ item in an array. If the 
 //    array is empty, return `undefined`.
 console.log('6.---------------------------------------------start');
-array = [1, 2, null];
+array = [1, 2, 3, 4];
 last =  function(array, n){
     if (array == null)
       return void 0; 
@@ -117,8 +119,7 @@ last =  function(array, n){
 
 //}
 
-console.log('this is the last item of the array:', last([1,2,3]));
-
+console.log('this is the last item of the array:', last([1,2,3,4]));
 
 
 console.log('6.---------------------------------------------end');
@@ -130,17 +131,28 @@ console.log('6.---------------------------------------------end');
 //    value is found and false otherwise. Use a loop;
 //    DO NOT use Array.includes, Array.indexOf, or Array.find 
 console.log('7.---------------------------------------------start');
-array = [5, 10, 15, 25]; 
-function find( value, array ){
-    for( var i = 0; i< array; i++)
-        if(value[i] === array ){
-
+const array2 = [5, 10, 15];  
+console.log('this is the array', array2)
+function find( value, array2 ){
+    for( i = 0; i< array2.length; i++)
+        if(value === array2[i]){
+          console.log('the value is in the array2 ;therefore,: ');
+            return true;
         }
-  return false; 
+        
+          console.log('the value is not in the array ;therefore,:');
+          return false; 
+        
+  
+  
 }
 
 
-console.log( 'this is the value:', find());
+console.log( 'is the value 4 in the array:', find(4, array2));
+console.log( 'is the value 5 in the array:', find(5, array2));
+console.log( 'is the value 10 in the array:', find(10, array2));
+console.log( 'is the value 15 in the array:', find(15, array2));
+
 
 
 console.log('7.---------------------------------------------end');
@@ -150,25 +162,76 @@ console.log('7.---------------------------------------------end');
 // ----------------------
 // 8. Function to check if a letter is the first letter in a 
 //    string. Return true if it is, and false otherwise
+console.log('8.---------------------------------------------start');
 function isFirstLetter(letter, string) {
-
+      return true;
 }
 console.log( 'isFirstLetter - should say true', isFirstLetter('a', 'apple') );
 console.log( 'isFirstLetter - should say false', isFirstLetter('z', 'apple') );
 
+
+
+
+console.log('8.---------------------------------------------end');
+
+
+
 // 9. Function to return the sum of all numbers in an array
-function sumAll( ) {
-  let sum = 0
+console.log('9.---------------------------------------------start');
+let array3 = [2,4,6]
+let sum = 0;
+function sumAll() {
+    while( sum <= 12){
+      console.log(sum + array3.length);
+    }
+      sum++; 
+    
+
   // TODO: loop to add items
   return sum;
 }
 
+
+
+
+
+
+
+console.log(' this is the total sum of the array',sum);
+
+console.log('9.---------------------------------------------end');
+
 // 10. Function to return a new array of all positive (greater than zero)
 //     numbers contained in an input array. If there are no positive numbers
 //     return an empty array. Note: The input array should not change.
+console.log('10.---------------------------------------------start');
+
+
+
+
+
+
+
+
+
+
+
+
+
+console.log('10.---------------------------------------------end');
 
 
 
 // 11. Pick a problem from Edabit(https://edabit.com/) or 
 //     CodeWars(https://www.codewars.com/). Then describe it 
 //     here in a comment, write the function, and test it!
+console.log('11.---------------------------------------------start');
+
+
+
+
+
+
+
+
+console.log('11.---------------------------------------------end');

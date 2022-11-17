@@ -183,8 +183,8 @@ console.log('8.---------------------------------------------end');
 console.log('9.---------------------------------------------start');
 let sum = 0;
 function sumAll(...x) {
-    while( sum <= 12){
-      
+    for( let i = 0; i <= sumAll.length; i ++){
+       sum = sum + x[i];
     }
     
     
@@ -193,7 +193,6 @@ function sumAll(...x) {
   return sum;
 }
 console.log(sumAll(2,4,6));
-
 
 
 
@@ -209,15 +208,20 @@ console.log('9.---------------------------------------------end');
 console.log('10.---------------------------------------------start');
 
 
+function numArray(...x){
+const result = x.filter(returnGreaterNum);
+  function returnGreaterNum(x){ 
+    return  x > 0;  // filtering numbers
+  }
+// missing a way to display the greater
 
+return result; 
 
-
-
-
-
-
-
-
+}
+console.log( 'display num', numArray(-1,-5,3));
+console.log( 'display num', numArray(1,2,3,4,5));
+console.log( 'display num', numArray(0,0,0));
+console.log( 'display num', numArray(-4,-7,-9,-2));
 
 
 console.log('10.---------------------------------------------end');
